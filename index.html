@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday!</title>
+
+
+
+<link rel="stylesheet" href="css/index.css">
+<style>
+    
+    .song {
+        float: left;
+}
+  
+</style>
+
+</head>
+
+<body>
+   <audio controls="controls" class="song"  loop="true" autoplay="autoplay">
+        <source src="./assets/02.flac"></source>
+    </audio>
+    <div id="snow-container"></div>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<div class="mobile">最大化查看</div>
+<div class="pyro">
+<div class="before"></div>
+<div class="after"></div>
+</div>
+
+<h1>Feliz Cumpleaños Pratik!</h1>
+<h2>Happy Birthday 张子玉!</h2>
+<span>🎉</span>
+<div class="candle">
+<div id="flame" class="lit"></div>
+</div>
+<div class="cake"></div>
+<div class="plate"></div>
+
+<script>
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.style.left = Math.random() * window.innerWidth + 'px';
+        snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+        snowflake.style.opacity = Math.random();
+        snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+
+        const randomColor = getRandomColor();
+        snowflake.style.backgroundColor = randomColor;
+
+        snowflake.innerHTML = '生日快乐❤️'; // You can customize the snowflake symbol here
+
+        return snowflake;
+    }
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function snowfall() {
+        const snowContainer = document.getElementById('snow-container');
+        const numSnowflakes = 50; // Adjust the number of snowflakes here
+
+        for (let i = 0; i < numSnowflakes; i++) {
+            const snowflake = createSnowflake();
+            snowContainer.appendChild(snowflake);
+        }
+    }
+
+    snowfall();
+</script>
+
+</body>
+
+</html>
+
