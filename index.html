@@ -9,7 +9,16 @@
 
 <link rel="stylesheet" href="css/index.css">
 <style>
-
+.song {
+    display: block;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.audio {
+    margin-top: 500px;
+    
+}
 </style>
 
 </head>
@@ -75,9 +84,10 @@
 </div>
 <div class="cake"></div>
 <div class="plate"></div>
+<div class="audio">
 <audio controls="controls" class="song"  loop="true" autoplay="autoplay">
         <source src="./assets/02.flac"></source>
-    </audio>
+    </audio></div>
 <script>
     function createSnowflake() {
         const snowflake = document.createElement('div');
