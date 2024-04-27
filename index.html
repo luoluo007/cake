@@ -9,19 +9,12 @@
 
 <link rel="stylesheet" href="css/index.css">
 <style>
-    
-    .song {
-        float: left;
-}
-  
+
 </style>
 
 </head>
 
 <body>
-   <audio controls="controls" class="song"  loop="true" autoplay="autoplay">
-        <source src="./assets/02.flac"></source>
-    </audio>
     <div id="snow-container"></div>
 <bokeh></bokeh>
 <bokeh></bokeh>
@@ -82,7 +75,9 @@
 </div>
 <div class="cake"></div>
 <div class="plate"></div>
-
+<audio controls="controls" class="song"  loop="true" autoplay="autoplay">
+        <source src="./assets/02.flac"></source>
+    </audio>
 <script>
     function createSnowflake() {
         const snowflake = document.createElement('div');
