@@ -58,7 +58,8 @@ h1, h2, span {
     width: 100%;
     top: 50px;
     font-size: 90px;
-    background: -webkit-linear-gradient(90deg, #e9e6ff 0%, white 100%);
+    /* background: -webkit-linear-gradient(90deg, #e9e6ff 0%, white 100%); */
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -981,14 +982,15 @@ h1, h2, span {
 
 .snowflake {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   background-color: #fff;
   border-radius: 50%;
   opacity: 0.8;
   pointer-events: none;
   animation: snowfall linear infinite;
-  color:  #fff;
+  color:  black;
+  font-weight: bold;
 }
 @keyframes snowfall {
   0% {
