@@ -989,8 +989,7 @@ h1, h2, span {
   opacity: 0.8;
   pointer-events: none;
   animation: snowfall linear infinite;
-  color:  black;
-  /* font-weight: bold; */
+  color: black;
 }
 @keyframes snowfall {
   0% {
