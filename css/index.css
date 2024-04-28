@@ -990,7 +990,7 @@ h1, h2, span {
   pointer-events: none;
   animation: snowfall linear infinite;
   color:  black;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 @keyframes snowfall {
   0% {
